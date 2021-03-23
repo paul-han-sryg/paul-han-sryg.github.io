@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>FERM Response Handling Assistive Tool</title>
+	<style>
+		#corps {
+			margin: 10px;
+		}
+		.location-option-button {
+			border: 1px solid #000;
+			cursor: pointer;
+			display: inline-block;
+			margin: 10px;
+			padding: 10px;
+			user-select: none;
+		}
+		.location-option-button.active {
+			border: 3px solid #000;
+			font-weight: bold;
+		}
+		#message-container {
+			align-items: center;
+			display: grid;
+			grid-template-columns: 80% 20%;
+			justify-items: center;
+			padding: 20px 50px;
+			grid-row-gap: 20px;
+		}
+		.message-display-box {
+			border: 2px solid #BBB;
+			padding: 25px;
+			width: 100%;
+		}
+		.copy-button {
+			background-color: #666;
+			color: #FFF;
+			cursor: pointer;
+			padding: 20px 30px;
+			user-select: none;
+		}
+		.copy-button.toggled {
+			background-color: #DDD;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<select id="corps">
+		<option selected="true" disabled="disabled">None Selected</option>
+		<option value="Boston Pie">Boston Pie</option>
+		<option value="Buckliew">Buckliew</option>
+		<option value="BVK2">BVK2</option>
+		<option value="Cafua">Cafua</option>
+		<option value="Chapatwala">Chapatwala</option>
+		<option value="CPH">CPH</option>
+		<option value="Dino">Dino</option>
+		<option value="Frost">Frost</option>
+		<option value="Heritage">Heritage</option>
+		<option value="Jenell">Jenell</option>
+		<option value="JMC">JMC</option>
+		<option value="Lockwood">Lockwood</option>
+		<option value="MAS">MAS</option>
+		<option value="Monart">Monart</option>
+		<option value="NRJM">NRJM</option>
+		<option value="Patterson">Patterson</option>
+		<option value="PNG">PNG</option>
+		<option value="Rozek">Rozek</option>
+		<option value="Schulz">Schulz</option>
+		<option value="Spangler">Spangler</option>
+		<option value="TIPS">TIPS</option>
+	</select>
+	<div id="location-options-menu"></div>
+	<div id="message-container">
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
