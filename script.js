@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Awesome! Ok, here’s the deal: we have several locations, positions and pay rates.\n\nHere you can apply for a position for the store located at LOCATION_NAME: HIRING_LINK\n\nI’ll check back in a day - once you complete the application I’ll send across a BUNCH of helpful info to help you get the job.',
             'No problem! If you’re ever interested, I wanted to make sure you had the inside scoop… here’s the application link:\nHIRING_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I’ll remove you from their list :)',
             'Hey! Did you get a chance to complete the application yet? If you did, I’ll send across a bunch of information to help you get the job. No worries if not, I can follow up in a few days.\n\nReply YES if you have completed the application, NO if you have not',
-            'Awesome! Alright, I’m excited to help you get in touch with the manager. You can choose to wait for them to reach out, but why not seize the day??? (Plus, good first step if you want to get promoted quickly!)\n\nHere’s the store phone number: STORE_PHONE\n\nWhen you call, it’s best to introduce yourself and see if you can come in for an interview in the next few days… let them make time for you, you’re worth it :)\n\nI’ll follow up in 2 days to see if you were able to get in touch. I can bug the manager if you don’t hear back too, no worries :)',
+            'Awesome! Alright, I’m excited to help you get in touch with the manager. You can choose to wait for them to reach out, but why not seize the day??? (Plus, good first step if you want to get promoted quickly!)\n\nHere’s the store phone number: STORE_PHONE\n\nWhen you call, it’s best to introduce yourself and see if you can come in for an interview in the next few days…',
             'Hey! So you applied 2 days ago, and I just wanted to make sure you heard from the manager. If not, I can bug the manager and their manager :)',
             'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
         ],
@@ -15,13 +15,56 @@ document.addEventListener('DOMContentLoaded', () => {
             'Awesome! Ok, here’s the deal: we have several locations, positions and pay rates.\n\nHere you can apply for a position for the store located at LOCATION_NAME: HIRING_LINK\n\nHere you can see ALL the locations that are hiring, and apply: ALL_LOCATIONS_LINK\n\nI’ll check back in a day - once you complete the application I’ll send across a BUNCH of helpful info to help you get the job.',
             'No problem! If you are ever interested, I wanted to make sure you had the inside scoop… here is the application link:\nHIRING_LINK\n\nIf you want to see their other locations, check here: ALL_LOCATIONS_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I will remove you from their list :)',
             'Hey! Did you get a chance to complete the application yet? If you did, I’ll send across a bunch of information to help you get the job. No worries if not, I can follow up in a few days.\n\nReply YES if you have completed the application, NO if you have not',
-            'Awesome! Alright, I’m excited to help you get in touch with the manager. You can choose to wait for them to reach out, but why not seize the day??? (Plus, good first step if you want to get promoted quickly!)\n\nHere’s the store phone number: STORE_PHONE\n\nWhen you call, it’s best to introduce yourself and see if you can come in for an interview in the next few days… let them make time for you, you’re worth it :)\n\nI’ll follow up in 2 days to see if you were able to get in touch. I can bug the manager if you don’t hear back too, no worries :)',
+            'Awesome! Alright, I’m excited to help you get in touch with the manager. You can choose to wait for them to reach out, but why not seize the day??? (Plus, good first step if you want to get promoted quickly!)\n\nHere’s the store phone number: STORE_PHONE\n\nWhen you call, it’s best to introduce yourself and see if you can come in for an interview in the next few days…',
             'Hey! So you applied 2 days ago, and I just wanted to make sure you heard from the manager. If not, I can bug the manager and their manager :)',
             'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
         ]
     }
 
+
     const corps = {
+      '369':{
+        'Kittery':['(207) 438-0296','369.syrghq.com'],
+        'Newfields':['(603) 394-0009','369.syrghq.com'],
+        'Epping Rd.':['(603) 658-0183','369.syrghq.com'],
+        'Stratham 2':['(603) 658-0660','369.syrghq.com'],
+        'Exeter':['(603) 778-8995','369.syrghq.com'],
+        'Stratham':['(603) 772-8394','369.syrghq.com'],
+        'Hampton':['(603) 926-6250','369.syrghq.com'],
+        'N. Hampton':['(603) 964-8856','369.syrghq.com'],
+        '42 Lafayette Rd, North Hampton':['(603) 964-8856','369.syrghq.com'],
+        '369 Lafayette Rd, Hampton':['(603) 926-6250','369.syrghq.com'],
+        '443 Lafayette Rd, Seabrook':['(603) 474-5303','369.syrghq.com'],
+        '165 Portland Ave, Dover':['(603) 750-3150','369.syrghq.com'],
+        '720 Lafayette Rd, Seabrook':['(603) 474-1136','369.syrghq.com'],
+        '61 Portsmouth Ave, Exeter':['(603) 778-8995','369.syrghq.com'],
+        '65 NH-108, Newfields':['(603) 394-0009','369.syrghq.com'],
+        '175 Main St, South Berwick':['(207) 384-4188','369.syrghq.com'],
+        '48 Portsmouth Ave, Stratham':['(603) 658-0660','369.syrghq.com'],
+        '12 Ocean Blvd, Seabrook':['(603) 474-7946','369.syrghq.com'],
+        '151 ME-236, Eliot':['(207) 439-9830','369.syrghq.com'],
+        '40 Beach St Unit B, Manchester-by-the-Sea':['(978) 526-8708','369.syrghq.com'],
+        '15 Portsmouth Ave, Stratham':['(603) 772-8394','369.syrghq.com'],
+        '191 Epping Rd, Exeter':['(603) 658-0183','369.syrghq.com'],
+        '400 US Hwy 1, Kittery':['(207) 438-0296','369.syrghq.com']
+      },
+      'Batista':{
+          '2456 Warwick Ave, Warwick': ['(401) 738-6404','jobs.workstream.us/j/john_batista__dunkin/086c7493'],
+          '1710 West Shore Rd, Warwick': ['(401) 736-0378','jobs.workstream.us/j/john_batista__dunkin/0bb36e60'],
+          '2677 West Shore Rd, Warwick': ['(401) 738-4396','jobs.workstream.us/j/john_batista__dunkin/60bc987d'],
+          '1582 Warwick Ave, Warwick': ['(401) 737-9796','jobs.workstream.us/j/john_batista__dunkin/371b007f'],
+          '51 Manton Ave, Providence': ['(401) 621-7996','jobs.workstream.us/j/john_batista__dunkin/f3f6a543'],
+          '2611 South County Trail, East Greenwich': ['(401) 884-7065','jobs.workstream.us/j/john_batista__dunkin/e70aef71'],
+          '1678 Post Rd, Warwick': ['(401) 732-4105','jobs.workstream.us/j/john_batista__dunkin/d73d3723'],
+          '2003 Post Rd, Warwick': ['(401) 737-8832','jobs.workstream.us/j/john_batista__dunkin/a131b5ff'],
+          '422 Warwick Ave, Warwick': ['(401) 785-9332','jobs.workstream.us/j/john_batista__dunkin/8fd3ca2e'],
+          '1892 Kingstown Rd, Peacedale': ['(401) 789-1853','jobs.workstream.us/j/john_batista__dunkin/cbcca9c0'],
+          '1189 Boston Neck Rd, Narragansett': ['(401) 789-0546','jobs.workstream.us/j/john_batista__dunkin/b1235409'],
+          '94 Point Judith Rd, Narragansett': ['(401) 782-4220','jobs.workstream.us/j/john_batista__dunkin/40b376c7'],
+          '855 Point Judith Rd, Narragansett': ['(401) 789-7834','jobs.workstream.us/j/john_batista__dunkin/b3016692'],
+          '231 Old Tower Hill Rd, Wakefield': ['(401) 789-5419','jobs.workstream.us/j/john_batista__dunkin/f326343e'],
+          '2000 Post Rd, Warwick': ['(401) 737-8832','jobs.workstream.us/j/john_batista__dunkin/72827320']
+        },
         'Boston Pie':{
             'Boston Staniford':['(617) 248-0100','syrg.io/interview?s=64-staniford-st'],
             'Brighton':['(617) 782-5655','syrg.io/interview?s=464-washington-st'],
@@ -113,9 +156,39 @@ document.addEventListener('DOMContentLoaded', () => {
             'Berkeley':['(510) 525-1411','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1198%20SAN%20PABLO%20AVE,%20BERKELEY%20CA%2094706&stretch=0&stretchUnit=MILES'],
             'El Cerrito':['(510) 232-2121','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=11821%20San%20Pablo%20Ave,%20El%20Cerrito&stretch=0&stretchUnit=MILES']
         },
+        'Donovan' : {
+          '95 Franklin St., Quincy': ['774-360-4679', 'apply.jobappnetwork.com/donovanservices'],
+          '355 Plymouth St, Halifax': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
+          '750 Bedford Street, Bridgewater': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
+          '171 Broad Street, Bridgewater': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
+          'Rte 24 North, Bridgewater': ['781-864-1629', 'apply.jobappnetwork.com/donovanservices'],
+          'Rte 24 South, Bridgewater': ['781-864-1629', 'apply.jobappnetwork.com/donovanservices'],
+          '955 Pleasant Street, Bridgewater': ['781-864-1629', 'apply.jobappnetwork.com/donovanservices'],
+          '32 Driftway, Scituate': ['(508)-631-4936', 'apply.jobappnetwork.com/donovanservices'],
+          '1 Bay Street, Hull': ['(508)-631-4936', 'apply.jobappnetwork.com/donovanservices']
+        },
         'Frost':{
             'Main Street':['(727) 734-3166','careers.mcdonalds.com/us-restaurants/jobs?location=1645%20Main%20St,%20Dunedin,%20FL%2034698,%20USA&stretch=0&stretchUnit=MILES&page=1'],
             'Wiregrass':['(813) 907-9400','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1733%20BRUCE%20B%20DOWNS%20BLVD,%20Wesley%20Chapel%20FL%2033544&keywords=wiregrass&sortBy=relevance']
+        },
+        'Gambino': {
+          '39 Nashua Rd, Londonderry': ['(603) 434-3570', 'careers.mcdonalds.com/us-restaurants/jobs?keywords=12272&sortBy=relevance&page=1'],
+          '907 Second Street, Manchester': ['(603) 627-4793', 'careers.mcdonalds.com/us-restaurants/jobs?keywords=907%20Second%20Street,%20Manchester,%20NH&sortBy=relevance&page=1'],
+          '45 E. Hollis St. Nashua': ['(603) 880-3050', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&location=45%20E.%20Hollis%20St.%20Nashua,%20NH&stretch=0&stretchUnit=MILES'],
+          '56 Calef Hwy, Epping': ['(603) 679-8544', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&location=56%20Calef%20Hwy,%20Epping,%20NH&stretch=0&stretchUnit=MILES'],
+          '45 Crystal Ave, Derry': ['(603) 432-2231', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&location=45%20Crystal%20Ave,%20Derry,%20NH&stretch=0&stretchUnit=MILES'],
+          '907 Hanover St. Manchester': ['(603) 606-4967', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&location=907%20Hanover%20St.%20Manchester,%20NH&stretch=0&stretchUnit=MILES'],
+          '44 Concord Rd, Lee': ['(603) 868-6237', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&location=44%20Concord%20Rd,%20Lee,%20NH%2003857&stretch=0&stretchUnit=MILES'],
+          '196 S Willow St, Manchester': ['(603) 623-9259',	'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=196%20S%20Willow%20St,%20Manchesternt%20location'],
+          '569 Mast Rd, Goffstown': ['(603) 625-1278', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=569%20Mast%20Rd,%20Goffstown'],
+          '1254 Hooksett Rd, Hooksett': ['(603) 518-5775', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1254%20Hooksett%20Rd,%20Hooksett'],
+          '599 Nashua St, Milford': ['(603) 672-9265', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=599%20Nashua%20St,%20Milford'],
+          '2 Essex Dr, Raymond': ['(603) 895-9396',	'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2%20Essex%20Dr,%20Raymond'],
+          '1881 Dover Rd, Epsom': ['(603) 736-8474',	'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1881%20Dover%20Rd,%20Epsom'],
+          '15 Homestead Pl, Alton': ['(603) 875-6464', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=15%20Homestead%20Pl,%20Alton'],
+        },
+        'Grooy Goat': {
+            '106 S. OWA Blvd, Foley': ['(205) 512-9119', 'eldiabloowa.com/apply-now']
         },
         'Heritage':{
             '12925 Shelbyville Rd, Louisville':['(502) 245-5181','wendys-careers.com/job-search/?utm_campaign=Wendy%27s%202021%20-%20Hard%20To%20Fill%20Markets-Branded%20Terms%20and%20Competitors&category=&city=Louisville&state=&zip=40243&keyword=12925%20Shelbyville%20Rd&restaurant_id=&spage=1'],
@@ -136,6 +209,31 @@ document.addEventListener('DOMContentLoaded', () => {
         'JMC':{
             '14 Orchard':['(248) 855-9113','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=31325%20Orchard%20Lake%20Rd,%20Farmington%20Hills,%20MI%2048334,%20USA'],
             '31325 Orchard Lake, Farmington Hills':['(248) 855-9113','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=31325%20Orchard%20Lake%20Rd,%20Farmington%20Hills,%20MI%2048334,%20USA']
+        },
+        'JMP' : {
+            '868 S Main St, Cleveland': ['770-709-2652','syrg.io/interview?s=868-s-main-st'],
+            '461 Ponce De Leon Ave, Atlanta': ['770-709-2652', 'syrg.io/interview?s=461-ponce-de-leon-ave'],
+            '45 Hudson Plaza, Fairburn': ['770-709-2652', 'syrg.io/interview?s=45-hudson-plaza'],
+            '3435 Roosevelt Hwy, Atlanta': ['770-709-2652', 'syrg.io/interview?s=3435-roosevelt-hwy'],
+            '7490 Old National Hwy, Suite 1800, Riverdale': ['770-709-2652', 'syrg.io/interview?s=7490-old-national-hwy-suite-1800'],
+            '5819 Campbellton Rd, Atlanta': ['770-709-2652', 'syrg.io/interview?s=5819-campbellton-rd'],
+            '5207 Memorial Dr, Stone Mountain': ['770-709-2652', 'syrg.io/interview?s=5819-campbellton-rd'],
+            '6445 Highway 85, Riverdale': ['770-709-2652', 'syrg.io/interview?s=6445-highway-85'],
+            '1195 Fairburn Rd, Suite 110, Atlanta': ['770-709-2652', 'syrg.io/interview?s=1195-fairburn-rd-suite-110'],
+            '4682 Forsyth Rd, Macon': ['770-709-2652', 'syrg.io/interview?s=4682-forsyth-rd'],
+            '600 New St, Macon': ['770-709-2652', 'syrg.io/interview?s=600-new-st'],
+            '2410 DeKalb Medical Pkwy, Lithonia': ['770-709-2652', 'syrg.io/interview?s=2410-dekalb-medical-pkwy'],
+            '4319 Hartley Bridge Rd, Macon': ['770-709-2652', 'syrg.io/interview?s=4319-hartley-bridge-rd'],
+            '530 Joseph E Lowery Blvd, Suite F, Atlanta': ['770-709-2652', 'syrg.io/interview?s=530-joseph-e-lowery-blvd'],
+            '2520 Bouldercrest Rd SE, Atlanta': ['770-709-2652', 'syrg.io/interview?s=2520-bouldercrest-rd-se'],
+            '91 Highland Dr Ste 114, Ellijay': ['770-709-2652', 'syrg.io/interview?s=91-highland-dr-ste-114'],
+            '199 Highway 515 W Ste C, Blairsville': ['770-709-2652', 'syrg.io/interview?s=199-highway-515-w-ste-c'],
+            '1087 E Franklin St, Hartwell': ['770-709-2652','syrg.io/interview?s=1087-e-franklin-st'],
+            '160 Franklin St #B, Clarkesville': ['770-709-2652', 'syrg.io/interview?s=160-franklin-st-b'],
+            '2699 Watson Blvd, Warner Robins': ['770-709-2652', 'syrg.io/interview?s=2699-watson-blvd'],
+            '19 W Currahee St, Toccoa': ['770-709-2652', 'syrg.io/interview?s=19-w-currahee-st'],
+            '2278 Moody Rd # B, Warner Robins': ['770-709-2652', 'syrg.io/interview?s=2278-moody-rd-b'],
+            '1025 E Jackson St, Thomasville': ['770-709-2652', 'syrg.io/interview?s=1025-e-jackson-st']
         },
         'Lockwood':{
             'New Bedford':['(508) 992-0938','syrg.io/interview?s=85-coggeshall-st'],
@@ -348,6 +446,14 @@ document.addEventListener('DOMContentLoaded', () => {
             '67600 S. Main St. Richmond, MI 48062':['(586) 727-2800','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=67600%20S.%20Main%20St.%20Richmond,%20MI%2048062'],
             '700 Pte. Tremble Algonac, MI 48001':['(810) 794-0890','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=700%20Pte.%20Tremble%20Algonac,%20MI%2048001']
         },
+        'SS Pizza' : {
+          '18701 Limestone Commercial Dr #400, Pflugerville': ['(512) 990-7991', 'syrg.io/interview?s=limestone-commercial-drive-pflugerville'],
+          '13201 Pond Springs Rd, Austin': ['(512) 331-7701', 'syrg.io/interview?s=pond-springs-road-austin'],
+          '7900 N FM 620, Austin': ['(512) 258-7000', 'syrg.io/interview?s=north-fm-620-austin'],
+          '1420 Wells Branch Pkwy #105, Pflugerville': ['(512) 251-0996', 'syrg.io/interview?s=wells-branch-parkway-pflugerville'],
+          '13764 Research Blvd, Austin': ['(512) 250-9190', 'syrg.io/interview?s=research-boulevard-austin'],
+          '5145 Ranch Rd 620 N Suite F-125, Austin': ['(512) 871-0206', 'syrg.io/interview?s=ranch-road-620-north-austin']
+        },
         'Spangler':{
             'South Saginaw':['(810) 743-1120','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=3391%20S%20Saginaw,%20Burton,%20MI%2048529&woe=7&stretchUnit=KILOMETERS&stretch=0'],
             'Clio Rd':['(810) 239-9211','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=3212%20Clio%20Rd,%20Flint,%20MI%2048504&woe=7&stretchUnit=KILOMETERS&stretch=0'],
@@ -367,6 +473,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'Center Rd':['(810) 742-8529','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=2445%20Center%20Rd.%20Burton,%20MI%2048519&woe=7&stretchUnit=KILOMETERS&stretch=0'],
             '3760 E Washington Rd, Saginaw':['(989) 752-4568','careers.mcdonalds.com/us-restaurants/jobs?location=SAGINAW,%20M-81%20(33146)%203670%20E%20WASHINGTON%20RD%20SAGINAW,%20Michigan%20US&stretch=0&stretchUnit=MILES&page=1']
         },
+        'Tiny Dancer': {
+          '5821 Derek Ave, Sarasota': ['(941) 921-1979', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&stretch=0&stretchUnit=MILES&location=5821%20DEREK%20AVE'],
+          '3828 Bee Ridge Rd, Sarasota': ['(941) 922-4406', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&stretch=0&stretchUnit=MILES&location=3828%20BEE%20RIDGE%20RD']
+        },
         'TIPS':{
             '2807 E VA Beach Blvd, Norfolk':['(757) 629-0777','syrg.io/interview?s=2807-e-virginia-beach-blvd'],
             '6546 Hampton Roads Pkwy, Suffolk':['(757) 686-5280','syrg.io/interview?s=6546-hampton-roads-pkwy'],
@@ -374,6 +484,31 @@ document.addEventListener('DOMContentLoaded', () => {
             '903 Beckford Dr, Henderson':['(252) 438-2727','syrg.io/interview?s=903-s-beckford-dr'],
             '2048 Atlantic Ave St. B, Chesapeake':['2048 Atlantic ave St. B, Chesapeake, VA 23324','syrg.io/interview?s=2048-atlantic-ave'],
             'All':'syrg.io/all-stores?c=tips'
+        },
+        'TKMAV' : {
+          '2040 W Grand River Rd, Okemos': ['(517) 349-1190', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2040%20W%20Grand%20River%20Rd%2C%20Okemos'],
+          '2400 E Main St, Owosso': ['(989) 723-8438', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2400%20E%20Main%20St%2C%20Owosso'],
+          '3077 Lansing Rd, Perry': ['(517) 625-4044', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=3077%20Lansing%20Rd%2C%20Perry'],
+          '601 W Main St, Owosso': ['(989) 723-5222', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=601%20W%20Main%20St%2C%20Owosso'],
+          '200 W Grand River Ave, Williamston': ['(517) 655-5450', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=200%20W%20Grand%20River%20Ave%2C%20Williamston'],
+          '8760 Lansing Rd, Durand': ['(989) 288-5985', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=8760%20Lansing%20Rd%2C%20Durand'],
+          '805 Highview Drive, Webberville': ['(517) 521-1113', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=805%20Highview%20Drive%2C%20Webberville']
+        },
+        'VS & F' : {
+          '5500 W D Ave, Kalamazoo': ['(269) 383-5589', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=5394%20W%20Main%20St,%20Kalamazoocation'],
+          '6820 W Main (M-43), Kalamazoo': ['(269) 353-8599', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=5394%20W%20Main%20St,%20Kalamazoocation'],
+          '5394 W Main St, Kalamazoo': ['(269) 381-5027', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=5394%20W%20Main%20St,%20Kalamazoocation']
+        },
+        'Wake Pizza' : {
+          '4412 Falls of Neuse Rd # B109, Raleigh': ['602-910-7238', 'syrg.io/interview?s=412-falls-of-neuse-rd-b109'],
+          '2603 Glenwood Ave Ste 131, Raleigh': ['919-607-3816', 'syrg.io/interview?s=2603-glenwood-ave-ste-131'],
+          '3677 New Bern Ave, Raleigh': ['919-636-8949', 'syrg.io/interview?s=3677-new-bern-ave'],
+          '2658 S Saunders St, Raleigh': ['919-636-8949', 'syrg.io/interview?s=2658-s-saunders-st'],
+          '7315 Six Forks Rd, Raleigh': ['602-910-7238', 'syrg.io/interview?s=7315-six-forks-rd'],
+          '3948 Western Blvd, Raleigh': ['919-636-8949', 'syrg.io/interview?s=3948-western-blvd'],
+          '1600 Cross Link Rd Unit 101, Raleigh': ['919-636-8949', 'syrg.io/interview?s=1600-cross-link-rd-unit-101'],
+          '735 US-70, Garner': ['704-906-0283', 'syrg.io/interview?s=735-us-70'],
+          '135 E Davie St, Raleigh': ['919-636-8949', 'syrg.io/interview?s=135-e-davie-st']
         }
     };
 
