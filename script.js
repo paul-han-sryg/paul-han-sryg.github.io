@@ -328,6 +328,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'Pawtucket':['(401) 288-1976','syrg.io/interview?s=675-beverage-hill-ave-ste-100'],
             'All':'https://syrg.io/all-stores?c=Lockwood%20McKinnon%20Taco%20Bell'
         },
+        'Marbec': {
+          '809 E State Road 44, Wildwood': ['352-875-8243', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&keywords=%20Wildwood%20fl%20'],
+          '4080 Wedgewood Lane, The Villages': ['352-875-8243', 'careers.mcdonalds.com/us-restaurants/jobs?keywords=4080%20wedgewood%20lane%20the%20villages%20fl&sortBy=relevance&page=1'],
+          '320 Colony Boulevard, The Villages': ['352-875-8243', 'careers.mcdonalds.com/us-restaurants/jobs?sortBy=relevance&page=1&keywords=320%20colony%20blvd%20the%20villages%20fl'],
+        },
         'MAS':{
             'Holland - 8th':['(616) 392-7628','careers.mcdonalds.com/us-restaurants/jobs?location=657%20E%208th%20St,%20Holland,%20MI%2049423,%20USA&stretch=0&stretchUnit=MILES&page=1'],
             'Boon Rd.':['(231) 775-2311','careers.mcdonalds.com/us-restaurants/jobs?location=8560%20E,%208560%2034%20Rd,%20Cadillac,%20MI%2049601,%20USA&stretch=0&stretchUnit=MILES&page=1'],
