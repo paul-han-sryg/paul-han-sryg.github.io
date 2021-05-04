@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'McDonalds': [
             'Awesome! Ok, here’s the deal: we have several locations, positions and pay rates.\n\nHere you can apply for a position for the store located at LOCATION_NAME: HIRING_LINK\n\nI’ll check back in a day - once you complete the application I’ll send across a BUNCH of helpful info to help you get the job.',
             'No problem! If you’re ever interested, I wanted to make sure you had the inside scoop… here’s the application link:\nHIRING_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I’ll remove you from their list :)',
-            'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly at: STORE_PHONE\n\n Just ask for the hiring manager, they\'ll be able to help schedule your interview!',
+            'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly: STORE_PHONE\n\n Just ask for the hiring manager, they\'ll be able to help schedule your interview!',
             'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
         ],
         'Bubble': [
             'Awesome! Ok, here’s the deal: we have several locations, positions and pay rates.\n\nHere you can apply for a position for the store located at LOCATION_NAME: HIRING_LINK\n\nHere you can see ALL the locations that are hiring, and apply: ALL_LOCATIONS_LINK\n\nI’ll check back in a day - once you complete the application I’ll send across a BUNCH of helpful info to help you get the job.',
             'No problem! If you are ever interested, I wanted to make sure you had the inside scoop… here is the application link:\nHIRING_LINK\n\nIf you want to see their other locations, check here: ALL_LOCATIONS_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I will remove you from their list :)',
-            'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly at: STORE_PHONE\n\n Just ask for the hiring manager, they\'ll be able to help schedule your interview!',
+            'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly: STORE_PHONE\n\n Just ask for the hiring manager, they\'ll be able to help schedule your interview!',
             'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
         ]
     }
@@ -145,6 +145,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'Hampton':['(603) 929-0030','syrg.io/interview?s=725-lafayette-rd'],
             'All':'syrg.io/all-stores?c=bostonpie'
         },
+        'BMG bakery':{
+          '460 Rollins Industrial Ct, Ringgold': ['(706) 965-3902','app.higherme.com/locations/5989c6c390e10'],
+        },
         'Buckliew':{
             'Batesville -Relo':['(870) 793-1130','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1220%20N%20St%20Louis,%20Batesville,%20AR%2072501,%20USA&stretch=5&stretchUnit=KILOMETERS'],
             'Clinton':['(501) 745-6600','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=395%20HIGHWAY%2065%20N%20CLINTON,%20Arkansas%20US&stretch=5&stretchUnit=KILOMETERS&locations=CLINTON,Arkansas,United%20States'],
@@ -214,6 +217,21 @@ document.addEventListener('DOMContentLoaded', () => {
             'Berkeley':['(510) 525-1411','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1198%20SAN%20PABLO%20AVE,%20BERKELEY%20CA%2094706&stretch=0&stretchUnit=MILES'],
             'El Cerrito':['(510) 232-2121','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=11821%20San%20Pablo%20Ave,%20El%20Cerrito&stretch=0&stretchUnit=MILES']
         },
+        'DJ': {
+          '798 St George Blvd St, George': ['(435) 673-5938', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=798%20St%20George%20Blvd%20St,%20George'],
+          '1026 W 200 N, Cedar City': ['(435) 586-4700', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1026%20W%20200%20N,%20Cedar%20City'],
+          '1325 S Bluff St, George': ['(435) 673-1422', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&keywords=10803%20St.%20George'],
+          '1911 W Sunset Blvd, St George': ['(435) 688-2199', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1911%20W%20Sunset%20Blvd,%20St%20George&stretch=0&stretchUnit=MILES'],
+          '735 W Telegraph St, Washington': ['(435) 652-6100', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&keywords=34265'],
+          '1811 W State St, Hurricane': ['(435) 635-3188', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&keywords=24037'],
+          '211 W Cougar Blvd, Provo': ['(801) 374-6909', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=211%20W%20Cougar%20Blvd,%20Provo&stretch=0&stretchUnit=MILES'],
+          '365 W 1400 N, PO Box 1650, Beaver': ['', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=365%20W%201400%20N,%20PO%20Box%201650,%20Beaver&stretch=0&stretchUnit=MILES'],
+          '541 S Main, PO Box 713, Epharaim': ['', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=%20Epharaim&stretch=0&stretchUnit=MILES&keywords=16556'],
+          '1050 S SR 118, Richfield': ['(435) 896-8285', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=%201050%20S%20SR%20118,%20Richfield&stretch=0&stretchUnit=MILES'],
+          '290 E Main, Delta': ['', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=290%20E%20Main,%20Delta&stretch=0&stretchUnit=MILES'],
+          '1050 W Hwy 40, Vernal': ['(435) 789-4007', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1050%20W%20Hwy%2040,%20Vernal&stretch=0&stretchUnit=MILES'],
+          '621 E 200 N, Roosevelt': ['(435) 722-5822', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=621%20E%20200%20N,%20Roosevelt&stretch=0&stretchUnit=MILES'],
+        },
         'Donovan' : {
           '95 Franklin St., Quincy': ['774-360-4679', 'apply.jobappnetwork.com/donovanservices'],
           '355 Plymouth St, Halifax': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
@@ -244,6 +262,10 @@ document.addEventListener('DOMContentLoaded', () => {
           '2 Essex Dr, Raymond': ['(603) 895-9396',	'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2%20Essex%20Dr,%20Raymond'],
           '1881 Dover Rd, Epsom': ['(603) 736-8474',	'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1881%20Dover%20Rd,%20Epsom'],
           '15 Homestead Pl, Alton': ['(603) 875-6464', 'careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=15%20Homestead%20Pl,%20Alton'],
+        },
+        'Go Pizza': {
+          '3205 University Drive, Durham': ['(919) 493-8484', 'https://syrg.io/interview?s=durham-university-dr'],
+          '1601 East NC Highway 54, Durham': ['(919) 544-1751', 'https://syrg.io/interview?s=durham-north-carolina-54'],
         },
         'Grooy Goat': {
             '106 S. OWA Blvd, Foley': ['(205) 512-9119', 'eldiabloowa.com/apply-now']
@@ -400,6 +422,26 @@ document.addEventListener('DOMContentLoaded', () => {
             'ANN ARBOR/PLYMOU':['(734) 662-9343','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2675%20PLYMOUTH%20ROAD,%20ANN%20ARBOR,%20MI%2048105urrent%20location'],
             '16 Ecorse Rd, Ypsilanti':['(734) 485-8416','https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=6%20ECORSE%20RD%20YPSILANTI,%20MI%20US&stretch=0&stretchUnit=MILES'],
             'YPSILANTI-ECORSE':['(734) 485-8416','https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=6%20ECORSE%20RD%20YPSILANTI,%20MI%20US&stretch=0&stretchUnit=MILES']
+        },
+        'Newks': {
+          '9047-1 Southside Blvd, Jacksonville': ['(904) 527-2402', 'app.higherme.com/locations/5edfbbe264e1d'],
+          '14964 Max Leggett Parkway Jacksonville FL': ['(904) 751-1261', 'app.higherme.com/locations/5edfbbe261413'],
+          '15 Sylvester Rd, Burlington': ['', 'https://app.higherme.com/locations/5edfbbe246429'],
+          '1103 Clarion Heights, Raleigh': ['', 'https://app.higherme.com/locations/5edfbbe249ddd'],
+          '3524 Meadowlands Lane, San Jose': ['', 'https://app.higherme.com/locations/5edfbbe2552e1'],
+          '3413 E 26th Ave, Tampa': ['', 'https://app.higherme.com/locations/5edfbbe25d5dc'],
+          '7211 Corporate Boulevard, Baton Rouge': ['','https://app.higherme.com/locations/5edfbbe268111'],
+          '105 Weaver Way, Boston': ['','https://app.higherme.com/locations/5edfbbe26b4ff'],
+          '13 Charter Street, Apt 2r, Boston': ['','https://app.higherme.com/locations/5edfbbe26e7af'],
+          '2962 N Lawndale, Apt 1, Chicago': ['','https://app.higherme.com/locations/5edfbbe271f07'],
+          '2505 N Ocean Blvd., Pompano Beach': ['', 'https://app.higherme.com/locations/5edfbbe275242'],
+          '733 Lake Harbour Drive, Ridgeland': ['', 'https://app.higherme.com/locations/5edfbbe27853c'],
+          '2021 W Pine St Apt 1, Orlando': ['','https://app.higherme.com/locations/5edfbbe27c5d0'],
+          '4238 Middlebrook Rd #416, Orlando': ['', 'https://app.higherme.com/locations/5edfbbe2806c0'],
+          '12955 Walsingham Rd 147, Largo': ['','https://app.higherme.com/locations/5edfbbe285466'],
+          '56 Shepton Street, Dorchester': ['', 'https://app.higherme.com/locations/5edfbbe289687'],
+          '8313 Tierra Del Sol Way, Raleigh': ['', 'https://app.higherme.com/locations/5edfbbe28c8b9'],
+          '215 Lavendar Court, Orlando': ['', 'https://app.higherme.com/locations/5edfbe45cd9d2']
         },
         'NRJM':{
             '1224 W Ogden, Unit K, Naperville':['(630) 687-9001','syrg.io/interview?s=1224-w-ogden-ave-unit-k'],
