@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'All':'syrg.io/all-stores?c=bostonpie'
         },
         'BMG bakery':{
-          '460 Rollins Industrial Ct, Ringgold': ['(706) 965-3902','app.higherme.com/locations/5989c6c390e10'],
+          '460 Rollins Industrial Ct, Ringgold': ['(706) 965-3902','app.higherme.com/locations/5989c6c390e10']
         },
         'Buckliew':{
             'Batesville -Relo':['(870) 793-1130','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1220%20N%20St%20Louis,%20Batesville,%20AR%2072501,%20USA&stretch=5&stretchUnit=KILOMETERS'],
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '1050 S SR 118, Richfield': ['(435) 896-8285', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=%201050%20S%20SR%20118,%20Richfield&stretch=0&stretchUnit=MILES'],
           '290 E Main, Delta': ['', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=290%20E%20Main,%20Delta&stretch=0&stretchUnit=MILES'],
           '1050 W Hwy 40, Vernal': ['(435) 789-4007', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1050%20W%20Hwy%2040,%20Vernal&stretch=0&stretchUnit=MILES'],
-          '621 E 200 N, Roosevelt': ['(435) 722-5822', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=621%20E%20200%20N,%20Roosevelt&stretch=0&stretchUnit=MILES'],
+          '621 E 200 N, Roosevelt': ['(435) 722-5822', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=621%20E%20200%20N,%20Roosevelt&stretch=0&stretchUnit=MILES']
         },
         'Donovan' : {
           '95 Franklin St., Quincy': ['774-360-4679', 'apply.jobappnetwork.com/donovanservices'],
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'Go Pizza': {
           '3205 University Drive, Durham': ['(919) 493-8484', 'https://syrg.io/interview?s=durham-university-dr'],
-          '1601 East NC Highway 54, Durham': ['(919) 544-1751', 'https://syrg.io/interview?s=durham-north-carolina-54'],
+          '1601 East NC Highway 54, Durham': ['(919) 544-1751', 'https://syrg.io/interview?s=durham-north-carolina-54']
         },
         'Grooy Goat': {
             '106 S. OWA Blvd, Foley': ['(205) 512-9119', 'eldiabloowa.com/apply-now']
