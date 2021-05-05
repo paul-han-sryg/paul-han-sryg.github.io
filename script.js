@@ -61,6 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
           '231 Old Tower Hill Rd, Wakefield': ['(401) 789-5419','jobs.workstream.us/j/john_batista__dunkin/f326343e'],
           '2000 Post Rd, Warwick': ['(401) 737-8832','jobs.workstream.us/j/john_batista__dunkin/72827320']
         },
+        'Bay Area': {
+          '2481 San Ramon Valley Blvd, San Ramon': ['(925) 820-4325', 'mcd.0675@us.stores.mcd.com'],
+          '6800 Santa Rita Blvd, Pleasanton': ['(925) 463-1955', 'mcd.11838@us.stores.mcd.com'],
+          '10000 Crow Canyon Rd, Danville': ['(925) 736-8940', 'mcd.12306@us.stores.mcd.com'],
+          '3001 Bernal Ave, Pleasanton': ['9925) 249-0620', 'mcd.19799@us.stores.mcd.com'],
+          '14896 CA-4, Discovery Bay': ['(925) 513-4025', 'mcd.26085@us.stores.mcd.com']
+        },
         'Bluemont' : {
           '712 North Campbell Station Road, Knoxville': ['(865) 671-4110', 'app.higherme.com/locations/5952a9010d05f'],
           '2630 Decatur Pike, Athens': ['(865) 671-4110', 'app.higherme.com/locations/5952a91209cb6'],
@@ -181,6 +188,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'South Portland Donuts LLC [355845]':['(207) 558-6474','syrg.io/interview?s=818-main-st'],
             'All':'https://syrg.io/all-stores?c=Cafua'
         },
+        'Cayuga': {
+          '372 Elmira Rd, Ithaca': ['(607) 273-6030', 'https://www.mchire.com/co/McDonalds2688/Job?slug=crew-team-member-372-elmira-rd-ithaca-ny-14850-45637-66213&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '357 Genesee St, Auburn': ['(315) 252-4000', 'https://www.mchire.com/co/McDonalds2688/Job?slug=crew-team-member-357-genesee-st-auburn-ny-13021-45637-66216&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '3327 Chambers Rd, Horseheads': ['(607) 796-9278', 'https://www.mchire.com/co/McDonalds2688/Job?slug=crew-team-member-3327-chambers-rd-horseheads-ny-14845-45637-66218&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '2350 N Triphammer Rd, Ithaca': ['(607) 257-1898', 'https://www.mchire.com/co/McDonalds2688/Job?slug=crew-team-member-2350-n-triphammer-ithaca-ny-14850-45637-66219&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F']
+        },
         'Chapatwala':{
             'Melvindale':['(313) 381-4300','careers.mcdonalds.com/us-restaurants/jobs?location=4001%20Oakwood%20Blvd,%20Melvindale,%20MI%2048122,%20USA&stretch=0&stretchUnit=MILES&page=1',],
             'Middlebelt':['(734) 946-8088','careers.mcdonalds.com/us-restaurants/jobs?location=9273%20Middlebelt%20Rd,%20Romulus,%20MI%2048174,%20USA&stretch=0&stretchUnit=MILES&page=1'],
@@ -232,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '1050 W Hwy 40, Vernal': ['(435) 789-4007', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=1050%20W%20Hwy%2040,%20Vernal&stretch=0&stretchUnit=MILES'],
           '621 E 200 N, Roosevelt': ['(435) 722-5822', 'careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=621%20E%20200%20N,%20Roosevelt&stretch=0&stretchUnit=MILES']
         },
-        'Donovan' : {
+        'Donovan': {
           '95 Franklin St., Quincy': ['774-360-4679', 'apply.jobappnetwork.com/donovanservices'],
           '355 Plymouth St, Halifax': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
           '750 Bedford Street, Bridgewater': ['508-577-2262', 'apply.jobappnetwork.com/donovanservices'],
@@ -243,9 +256,36 @@ document.addEventListener('DOMContentLoaded', () => {
           '32 Driftway, Scituate': ['(508)-631-4936', 'apply.jobappnetwork.com/donovanservices'],
           '1 Bay Street, Hull': ['(508)-631-4936', 'apply.jobappnetwork.com/donovanservices']
         },
+        // 'EPSI': {
+        //   '2808 S. Main, Ste F, Lindale'
+        //   '985 Hwy 287 Bypass, West Waxahachie'
+        //   '1107 W Camp Wisdom Rd, Dallas'
+        //   '103 E Belt Line Rd, Cedar Hill'
+        //   '101 S Hampton Rd, Desoto'
+        //   '306 E Ennis Ave, Ennis'
+        //   '1828 Lamar Ave, Paris'
+        //   '2730 Richmond Rd, Texarkana'
+        //   '701 W Gentry Parkway, Tyler'
+        //   '1305 N Blue Grove Rd, Suite #100, Lancaster'
+        //   '711 Estes Dr, Ste. 101, Longview'
+        //   '158 Heritage Pkwy, Gun Barrel City'
+        //   '110 Triple Creek Dr, #45 Longview'
+        // }
+        'Family Matters': {
+          '2406 Enterprise Rd, Orange City': ['(386) 775-7774','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2406%20Enterprise%20Rd%2C%20Orange%20City'],
+          '2190 Howland Blvd, Deltona': ['(386) 532-0046','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2190%20Howland%20Blvd%2C%20Deltona'],
+          '131 Howland Blvd, Deltona': ['(407) 302-0100','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=131%20Howland%20Blvd%2C%20Deltona'],
+          '2900 Halifax Crossings Blvd, Deltona': ['(386) 532-1480','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2900%20Halifax%20Crossings%20Blvd%2C%20Deltona']
+        },
         'Frost':{
             'Main Street':['(727) 734-3166','careers.mcdonalds.com/us-restaurants/jobs?location=1645%20Main%20St,%20Dunedin,%20FL%2034698,%20USA&stretch=0&stretchUnit=MILES&page=1'],
-            'Wiregrass':['(813) 907-9400','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1733%20BRUCE%20B%20DOWNS%20BLVD,%20Wesley%20Chapel%20FL%2033544&keywords=wiregrass&sortBy=relevance']
+            'Wiregrass':['(813) 907-9400','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1733%20BRUCE%20B%20DOWNS%20BLVD,%20Wesley%20Chapel%20FL%2033544&keywords=wiregrass&sortBy=relevance'],
+            '40728 US 19 N, Tarpon Springs': ['(727) 943-8721', 'https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=40728%20US%2019%20N,%20Tarpon%20Springs&stretch=0&stretchUnit=MILES'],
+            '2618 Bayshore Blvd, Dunedin': ['(727) 733-7271', 'https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=2618%20Bayshore%20Blvd,%20Dunedin&stretch=0&stretchUnit=MILES'],
+            '27643 Wesley Chapel Blvd, Wesley Chapel': ['(813) 907-9400','careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1733%20BRUCE%20B%20DOWNS%20BLVD,%20Wesley%20Chapel%20FL%2033544&keywords=wiregrass&sortBy=relevance'],
+            '19080 Bruce B Downs Blvd, Tampa': ['(813) 977-0076', 'https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=19080%20Bruce%20B%20Downs%20Blvd,%20Tampa%20mcdonald%27s&stretch=0&stretchUnit=MILES'],
+            '5101 Pointe of Tampa Way, Tampa': ['(813) 866-9721', 'https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=5101%20Pointe%20of%20Tampa%20Way,%20Tampa&stretch=0&stretchUnit=MILES'],
+            '2609 Creek Grassway, Lutz': ['(813) 909-9339', 'https://careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=2609%20Creek%20Grassway,%20Lutz&stretch=0&stretchUnit=MILES']
         },
         'Gambino': {
           '39 Nashua Rd, Londonderry': ['(603) 434-3570', 'careers.mcdonalds.com/us-restaurants/jobs?keywords=12272&sortBy=relevance&page=1'],
@@ -333,6 +373,12 @@ document.addEventListener('DOMContentLoaded', () => {
             '19 W Currahee St, Toccoa': ['770-709-2652', 'syrg.io/interview?s=19-w-currahee-st'],
             '2278 Moody Rd # B, Warner Robins': ['770-709-2652', 'syrg.io/interview?s=2278-moody-rd-b'],
             '1025 E Jackson St, Thomasville': ['770-709-2652', 'syrg.io/interview?s=1025-e-jackson-st']
+        },
+        'KMC': {
+          '2020 Pipestone RD, Benton Harbor':['(269) 926-7600', 'https://www.mchire.com/co/McDonalds686/Job?slug=crew-team-member-2020-pipestone-rd-benton-harbor-mi-49022-14004-9955&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '1025 Legrange, South Haven':['(269) 637-6953', 'https://www.mchire.com/co/McDonalds686/Job?slug=crew-team-member-1025-south-la-grange-road-south-haven-mi-49090-14004-9960&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '150 Ryno Rd., Coloma':['(269) 468-3241', 'https://www.mchire.com/co/McDonalds686/Job?slug=crew-team-member-150-east-ryno-road-coloma-mi-49038-14004-9986&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
+          '21 W. Monroe, Bangor':['(269) 427-8082', 'https://www.mchire.com/co/McDonalds686/Job?slug=crew-team-member-21-w-monroe-bangor-mi-49013-14004-10024&referer=https%3A%2F%2Fcareers.mcdonalds.com%2F'],
         },
         'Lockwood':{
             'New Bedford':['(508) 992-0938','syrg.io/interview?s=85-coggeshall-st'],
@@ -537,6 +583,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'PNG':{
             'Callahan':['(904) 879-2080','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=%20542361%20US%20HIGHWAY%201,%20CALLAHAN%20FL%2032011&stretch=5&stretchUnit=MILES'],
             'Kingsland':['(912) 729-5878','careers.mcdonalds.com/us-restaurants/jobs?page=1&sortBy=relevance&location=%20SR%2040%20%26%20I%2095,%20KINGSLAND%20GA%2031548&stretch=5&stretchUnit=KILOMETERS']
+        },
+        'Rodriguez': {
+          '480 North Venice Bypass, Venice': ['(941) 485-6619', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-02165-venice-fl-34292-17511-7692?lang=en-us&previousLocale=en-US'],
+          '1720 S Tamiami Trail, Venice': ['(941) 493-4555', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-04961-venice-fl-34293-17511-7696?lang=en-us&previousLocale=en-US'],
+          '1250 S McCall Road, Englewood': ['(941) 474-9486', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-1250-s-mccall-rd-englewood-fl-34223-17511-7700?lang=en-us&previousLocale=en-US'],
+          '325 Commercial Court, Venice': ['(941) 486-1138', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-325-commercial-ct-venice-fl-34292-17511-7706?lang=en-us&previousLocale=en-US'],
+          '5554 Fruitville Road, Sarasota': ['(941) 371-9165', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-5554-fruitville-rd-sarasota-fl-34232-17511-7707?lang=en-us&previousLocale=en-US'],
+          '4269 S Tamiami Trail, Venice': ['(941) 497-4776', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-4269-s-tamiami-tr-venice-fl-34293-17511-7709?lang=en-us&previousLocale=en-US'],
+          '13418 S McCall Road, Port Charlotte': ['(941) 828-0061', 'https://careers.mcdonalds.com/us-restaurants/jobs/crew-team-member-13418-s-mccall-rd-port-charlotte-fl-33981-17511-7710?lang=en-us&previousLocale=en-US']
         },
         'Rozek':{
             'North':['(231) 347-1711','mchire.com/co/McDonalds1502/Job?slug=mcdonalds-crew-team-member-1178-hwy-31-n-petoskey-mi-49770-51654-15170'],
