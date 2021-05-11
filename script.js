@@ -694,13 +694,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    document.getElementById('corps').addEventListener('change', (e) => {
-        setLocationOptions(e.target.value);
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      setLocationOptions(e.target.value);
     });
 
     document.addEventListener('click', (e) => {
         let target = e.target;
-
+        console.info(target)
         if (target.className == 'location-option-button') {
 
             if (document.querySelector('.location-option-button.active') != null) {
@@ -742,19 +742,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function setLocationOptions(corpName) {
-        activeCorp = corpName;
-
+    function setLocationOptions(locationFragment) {
         let locOptMenu = document.getElementById('location-options-menu')
-            corpObj = corps[corpName];
+        const locationObjects = Object.values(corps)
+        const locationArray = locationObjects.flatMap( x => Object.keys(x) )
+        console.info(locationArray)
+
+        if (locationFragment.length < 3) {
+          return
+        }
+
+        const matching = locationArray.filter(x => x.toLowerCase().match(locationFragment.toLowerCase()))
 
         locOptMenu.innerHTML = '';
         document.getElementById('message-container').innerHTML = '';
-
-        sortedLocNames = Object.keys(corpObj);
-        sortedLocNames.sort();
-
-        sortedLocNames.forEach((locName) => {
+        matching.forEach((locName) => {
             if (locName != 'All') {
                 let locOptButton = document.createElement('div');
                 locOptButton.className = "location-option-button";
