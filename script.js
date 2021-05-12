@@ -307,6 +307,20 @@ document.addEventListener('DOMContentLoaded', () => {
           '3205 University Drive, Durham': ['(919) 493-8484', 'https://syrg.io/interview?s=durham-university-dr'],
           '1601 East NC Highway 54, Durham': ['(919) 544-1751', 'https://syrg.io/interview?s=durham-north-carolina-54']
         },
+        'Golden Arches': {
+          '3500 Nelson Rd, Fairfield': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=3500%20Nelson%20Rd%2C%20Fairfield'],
+          '3101 Alamo Dr, Vacaville': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=3101%20Alamo%20Dr%2C%20Vacaville'],
+          '4731 Mack Rd, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=4731%20Mack%20Rd%2C%20Sacramento'],
+          '1500 E Main St, Woodland': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=1500%20E%20Main%20St%2C%20Woodland'],
+          '3006 K St, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=3006%20K%20St%2C%20Sacramento'],
+          '55 W Court St, Woodland': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=55%20W%20Court%20St%2C%20Woodland'],
+          '200 Richards Blvd, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=200%20Richards%20Blvd%2C%20Sacramento'],
+          '990 Alamo Dr, Vacaville': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=990%20Alamo%20Dr%2C%20Vacaville'],
+          '6370 Mack Rd, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=6370%20Mack%20Rd%2C%20Sacramento'],
+          '3080 Travis Blvd, Fairfield': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=3080%20Travis%20Blvd%2C%20Fairfield'],
+          '2985 Freeport Blvd, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2985%20Freeport%20Blvd%2C%20Sacramento'],
+          '2331 Broadway, Sacramento': ['','https://careers.mcdonalds.com/us-restaurants/jobs?stretchUnit=MILES&stretch=0&page=1&location=2331%20Broadway%2C%20Sacramento'],
+        },
         'Grooy Goat': {
             '106 S. OWA Blvd, Foley': ['(205) 512-9119', 'eldiabloowa.com/apply-now']
         },
