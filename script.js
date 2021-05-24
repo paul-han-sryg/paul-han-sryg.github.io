@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('searchInput').addEventListener('input', (e) => {
       setLocationOptions(e.target.value);
-    });
+   });
 
     document.addEventListener('click', (e) => {
         let target = e.target;
