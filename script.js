@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             messageContainer = document.getElementById('message-container');
             console.info(locName)
             messageContainer.innerHTML = '';
-            const data = allData.filter(x => x.locRef == locName)[0]
+            const data = allData.filter(x => x.fermValue == locName)[0]
             console.info(data)
             messageBlock.forEach((m) => {
                 let messageDisplayBox = document.createElement('div'),
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 messageDisplayBox.className = 'message-display-box';
                 copyButton.className = 'copy-button';
-                messageDisplayBox.innerHTML = generateMessage(data.corp, data.address, data.hiringLink, m);
+                messageDisplayBox.innerHTML = generateMessage(data.company, data.address, data.url, m);
                 copyButton.innerHTML = 'Copy';
 
                 messageContainer.appendChild(messageDisplayBox);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function setLocationOptions(locationFragment) {
-        const url='https://t5o7i4dzsb.execute-api.us-east-2.amazonaws.com/prod/?search=' + locationFragment;
+        const url='http://backend.ferm.talents.getsyrg.com:5057/location?fermValue=' + locationFragment + '&limit=20';
         fetch(url)
        .then(
         function(response) {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (locName != 'All') {
                     let locOptButton = document.createElement('div');
                     locOptButton.className = "location-option-button";
-                    locOptButton.innerHTML = locName.locRef +' (' + locName.corp + ')';
+                    locOptButton.innerHTML = locName.fermValue +' (' + locName.company + ')';
                     locOptMenu.appendChild(locOptButton);
                 }
             });
