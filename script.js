@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function setLocationOptions(locationFragment) {
-        const url='http://backend.ferm.talents.getsyrg.com:5057/location?fermValue=' + locationFragment + '&limit=20';
+        const url='https://backend.ferm.talents.getsyrg.com:5057/location?fermValue=' + locationFragment + '&limit=20';
         fetch(url)
        .then(
         function(response) {
