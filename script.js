@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'No problem! If you’re ever interested, I wanted to make sure you had the inside scoop… here’s the application link:\nHIRING_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I’ll remove you from their list :)',
             'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly, STORE_PHONE\n\nJust ask for the hiring manager, they\'ll be able to help schedule your interview!',
             'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
+        ],
+        'Email': [
+            'Awesome! Ok, here’s the deal: we have several locations, positions and pay rates.\n\nYou can send us an email directly to discuss working at our store at LOCATION_NAME. Our email is HIRING_LINK\n\nLooking forward to catching up!',
+            'No problem! If you’re ever interested, I wanted to make sure you had the inside scoop… here’s the application link:\nHIRING_LINK\n\nI may reach back out in a couple of months to check back in. But if you NEVER want to hear about this company or job again, reply “NEVER” and I’ll remove you from their list :)',
+            'Hello! Just checking back in. Were you able to apply okay? If you\'re having any issues connecting with the manager you can feel free to call the store directly, STORE_PHONE\n\nJust ask for the hiring manager, they\'ll be able to help schedule your interview!',
+            'Hey no worries! If you’re not interested OR are having trouble with the application, fill out this quick survey & we can help.\n\nIf you just have not had time, I’ll get back in touch in 2 days, don’t want to rush you. :)\n\nsyrg.io/help?i=[COPY THE APPLICANT ID FROM THE URL AND PUT IT HERE]'
         ]
     }
 
@@ -26,20 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             target.className = 'location-option-button active';
 
-            let locName = target.innerHTML.split(' (')[0],
-            messageBlock = messageBlocks['Standard'],
+            let locName = target.innerHTML.split(' :(')[0]
+
             messageContainer = document.getElementById('message-container');
             console.info(locName)
             messageContainer.innerHTML = '';
             const data = allData.filter(x => x.fermValue == locName)[0]
-            console.info(data)
+
+            if (data.url && data.url.includes('@')) {
+              messageBlock = messageBlocks['Email']
+            } else {
+              messageBlock = messageBlocks['Standard']
+            }
+
             messageBlock.forEach((m) => {
                 let messageDisplayBox = document.createElement('div'),
                     copyButton = document.createElement('div');
 
                 messageDisplayBox.className = 'message-display-box';
                 copyButton.className = 'copy-button';
-                messageDisplayBox.innerHTML = generateMessage(data.company, data.address, data.url, m);
+                const address = data.address? data.address : data.fermValue
+                messageDisplayBox.innerHTML = generateMessage(data.company, address, data.url, m);
                 copyButton.innerHTML = 'Copy';
 
                 messageContainer.appendChild(messageDisplayBox);
@@ -49,14 +62,30 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (target.className == 'copy-button') {
 
             let copyMessage = target.previousElementSibling.innerHTML.replaceAll('<br>','\n');
-            navigator.clipboard.writeText(copyMessage).then(() => {
-                    target.className = 'copy-button toggled';
+              var textArea = document.createElement("textarea");
+              textArea.value = copyMessage;
+
+              // Avoid scrolling to bottom
+              textArea.style.top = "0";
+              textArea.style.left = "0";
+              textArea.style.position = "fixed";
+              document.body.appendChild(textArea);
+              textArea.focus();
+              textArea.select();
+
+            try {
+               var successful = document.execCommand('copy');
+               var msg = successful ? 'successful' : 'unsuccessful';
+               target.className = 'copy-button toggled';
                     setTimeout(() => {
                         target.className = 'copy-button';
                     }, 500);
-                }, () => {
-                    alert("Something went wrong with the copy");
-            });
+               console.log('Fallback: Copying text command was ' + msg);
+            } catch (err) {
+               console.error('Fallback: Oops, unable to copy', err);
+            }
+
+            document.body.removeChild(textArea);
 
         }
     });
@@ -83,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (locName != 'All') {
                     let locOptButton = document.createElement('div');
                     locOptButton.className = "location-option-button";
-                    locOptButton.innerHTML = locName.fermValue +' (' + locName.company + ')';
+                    locOptButton.innerHTML = locName.fermValue +' :(' + locName.company + ')';
                     locOptMenu.appendChild(locOptButton);
                 }
             });
